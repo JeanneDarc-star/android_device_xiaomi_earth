@@ -12,10 +12,25 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/earth/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
+$(call inherit-product, vendor/avium/config/avium.mk)
+AVIUM_BUILDTYPE = Unoffical
+AVIUM_VERSION_APPEND_TIME_OF_DAY = false
 
-TARGET_ANIMATION_BOOT_RES := 720
-PRODUCT_NAME := yaap_earth
+# GMS
+WITH_GMS ?= true
+# GMS_TYPE has two options: FULL and CORE
+# If WITH_GMS is true and GMS_TYPE is not set, it will default to CORE
+GMS_TYPE ?= CORE
+
+# LatinIMEGooglePrebuilt
+# If WITH_GMS is true, TARGET_INCLUDE_GOOGLEIME and TARGET_GOOGLEIME_OVERRIDE_IME will be forced to true
+TARGET_INCLUDE_GOOGLEIME ?= true
+TARGET_GOOGLEIME_OVERRIDE_IME ?= true
+
+//It will display on the Setting-AboutPhone
+AVIUM_MAINTAINER = FooneyD_Arc
+
+PRODUCT_NAME := lineage_earth
 PRODUCT_DEVICE := earth
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
