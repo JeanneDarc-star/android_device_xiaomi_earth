@@ -12,9 +12,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/earth/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, product/halogenOS/config/common_full_phone.mk)
-
-PRODUCT_NAME := aosp_earth
+$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
+TARGET_BOOT_ANIMATION_RES := 720
+PRODUCT_NAME := bliss_earth
 PRODUCT_DEVICE := earth
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
