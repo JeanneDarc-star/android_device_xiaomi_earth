@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/genesis_earth.mk
+    $(LOCAL_DIR)/cloved_earth.mk
