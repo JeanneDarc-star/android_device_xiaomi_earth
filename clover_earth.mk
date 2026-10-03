@@ -15,7 +15,7 @@ $(call inherit-product, device/xiaomi/earth/device.mk)
 $(call inherit-product, vendor/clover/config/common_full_phone.mk)
 
 PRODUCT_NAME := clover_earth
-CLOVER_MAINTAINER := Kang_jinhyuk
+CLOVER_MAINTAINER := KangJinhyuk
 PRODUCT_DEVICE := earth
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
