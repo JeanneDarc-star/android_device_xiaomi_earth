@@ -14,6 +14,8 @@ $(call inherit-product, device/xiaomi/earth/device.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/miku/build/product/miku_product.mk)
 # TARGET_BOOT_ANIMATION_RES := 720
+MIKU_GAPPS := true
+MIKU_MASTER := 青い海
 PRODUCT_NAME := miku_earth
 PRODUCT_DEVICE := earth
 PRODUCT_MANUFACTURER := Xiaomi
