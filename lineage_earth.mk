@@ -12,14 +12,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/earth/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/clover/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := clover_earth
-CLOVER_MAINTAINER := KangJinhyuk
+PRODUCT_NAME := lineage_earth
+AXION_CAMERA_REAR_INFO := 50
+AXION_CAMERA_FRONT_INFO := 5
+TARGET_INCLUDE_AXFX := true
+AXION_MAINTAINER := 時崎_狂三
+AXION_PROCESSOR := Mediatek_Helio_G85
 PRODUCT_DEVICE := earth
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
-PRODUCT_MODEL := 22120RN86C
+PRODUCT_MODEL := 22120RN86G
 
 PRODUCT_SYSTEM_NAME := earth_global
 PRODUCT_SYSTEM_DEVICE := earth
