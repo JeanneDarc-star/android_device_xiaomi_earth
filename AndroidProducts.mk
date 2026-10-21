@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/miku_earth.mk
+    $(LOCAL_DIR)/yaap_earth.mk
